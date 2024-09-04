@@ -1,0 +1,61 @@
+<!docType HTML>
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="script.js" defer></script> 
+        <meta charset="utf-8">
+
+        <title>"Сайт для рукоделия"</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,700;1,9..40,700&family=Great+Vibes&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div id="header_first_row">
+                <img id="header_logo" src="logo.png">
+                <nav id="header_menu">
+                    <ul>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Магазин</a></li>
+                        <li><a href="#">Паттерны для вязания</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div id="header_basket">
+                    <a href="#">
+                        <img class="icon" src="https://static.vecteezy.com/system/resources/previews/019/787/018/non_2x/shopping-cart-icon-shopping-basket-on-transparent-background-free-png.png" alt="Корзина">
+                        Корзина
+                    </a>
+                    <!-- Менять картинку, если лежит >1 продуктов https://cdn-icons-png.flaticon.com/512/1413/1413925.png -->
+                    <!-- добавить динамическую цифру для кол-ва продуктов в корзине по типу: Корзина: 2 -->
+                </div>
+                <select id="header_language">
+                    <option value="En">En</option>
+                    <option value="Rus">Рус</option>
+                </select>
+                <select id="header_currency">
+                    <option value="Dollars">$</option>
+                    <option value="Rubles">₽</option>
+                </select>
+            </div>
+        </header>
+        <div id="main_content">
+            <div class="text">
+                <div id="main_text">Уникальные продукты</div>
+                <div id="additional_text">для специальных моментов</div>
+            </div>
+            <div class="buttons">
+                <button id="shop">За покупками</button>
+                <button id="patterns">Схемы для вязания</button>
+            </div>
+            <div class="slideshow">
+                <div onclick="changeImg(1)"></div>
+                <div onclick="changeImg(2)"></div>
+                <div onclick="changeImg(3)"></div>
+            </div>
+        </div>
+    </body>
+</html>

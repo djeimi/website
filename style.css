@@ -1,0 +1,173 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: grid;
+    align-items: center;
+
+    width: 100%;
+    height: 100px;
+
+    background: linear-gradient(to bottom, rgb(255, 204, 204), transparent);
+}
+header a{
+    cursor: pointer;
+    text-decoration: none;
+}
+#header_first_row{
+    display: grid;
+    grid-template-columns: 1fr 7fr 2fr 0.5fr 0.5fr;
+    align-items: center;
+    justify-content: space-between;
+}
+#header_menu ul{
+    list-style-type: none;
+    margin-left: 15px;
+    padding: 0;
+    text-align: center;
+    
+    display: flex;
+    justify-content: space-between;
+}
+#header_menu ul li a{
+    color: rgb(255, 153, 153);
+    padding: 5px;
+}
+#header_menu ul li a:hover, #header_basket a:hover{
+    color:white;
+
+    border: 1px solid white;
+    border-radius: 15px;
+}
+#header_basket a{
+    width: 80px;
+
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: end;
+    margin-left: 25px;
+
+    color: rgb(255, 153, 153);
+}
+#header_basket img{
+    width: 35px;
+    height: 20px;
+    object-fit: cover;
+}
+#header_language, #header_currency{
+    border: 1px solid rgb(205, 154, 154);
+    border-radius: 15px;
+    background-color: transparent;
+    width: 45px;
+    cursor: pointer;
+}
+#header_language:hover, #header_currency:hover{
+    color:white;
+
+    border: 1px solid white;
+}
+#header_currency{
+    margin-left: 2px;
+    margin-right: 12px;
+    width: 30px;
+}
+#header_logo{
+    margin: -15px;
+    padding: 0;
+
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+}
+
+#main_content{
+    background-image: url('https://kartinki.pics/uploads/posts/2021-07/thumbs/1625245756_7-kartinkin-com-p-fon-vyazanie-krasivie-foni-7.jpg');
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center; 
+    width: 100%; 
+    height: 100vh;
+
+    display: grid;
+    grid-template-rows: 3fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+
+    transition: background-image 0.5s ease-out;
+}
+#main_content .text{
+    text-align: center;
+    
+    background: linear-gradient(to right, #191970, #0000FF);
+    background-clip: text;
+    color: transparent;
+    
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+#main_content .text #additional_text{
+    font-size: 25px;
+}
+#main_content .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 350px;
+    height: 50px;
+
+    margin: 0;
+}
+#main_content #shop, #main_content #patterns{
+    width: 130px;
+    height: 35px;
+
+    background-color: transparent;
+    border: 1px solid #191970;
+    border-radius: 15px;
+
+    color: #191970;
+    font-weight: bolder;
+
+    cursor: pointer;
+    
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+#main_content #shop:hover, #main_content #patterns:hover{
+    color:white;
+    border: 1px solid white;
+}
+#main_content .slideshow{
+    width: 50px;
+    height: 15px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 100px;
+    margin-left: 150px;
+}
+#main_content .slideshow div{
+    width: 8px;
+    height: 8px;
+    cursor: pointer;
+
+    border: 2px solid blue;
+    border-radius: 50%;
+}
+#main_content .slideshow div:hover{
+    border: 2px solid white;
+}
+
+
+
+/* #main_content > * {
+    border: 1px solid red; 
+} */
